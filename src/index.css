@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: white;
+  transition: all 0.3s;
+}
+a:hover {
+  color: orange;
+}
+
+body {
+  background-color: #4c4c4c;
+}
+
+header {
+  padding: 1rem;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  color: white;
+}
+header > h1 {
+  flex: 1;
+}
+header > nav {
+  width: 100%;
+  flex: 2;
+}
+header > nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+main {
+  padding: 1rem;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.product {
+  background-color: rgb(161, 157, 153);
+  padding: 0.5rem;
+}
+
+footer {
+  background-color: #2c2c2c;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icon {
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 0.3rem;
+  transition: all 0.3s;
+}
+.footer__icon:hover {
+  color: orangered;
+}
