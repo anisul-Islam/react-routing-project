@@ -229,6 +229,65 @@
 }
 /* products & product-details ends  here*/
 
+/* pagination starts here  */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button.active,
+.pagination button.hover {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.pagination button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* pagination ends here  */
+
+/* search and sort starts here  */
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.search input {
+  margin-bottom: 1.2rem;
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+}
+.sort {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort-select {
+  margin-left: 0.6rem;
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+}
+/* search and sort ends here  */
+
 /* responsiveness starts here  */
 @media (max-width: 768px) {
   .navbar__links ul {
